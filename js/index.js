@@ -50,7 +50,7 @@ function tick() {
       drawLine(code.location.bottomLeftCorner, code.location.topLeftCorner, "#FF3B58");
       outputMessage.hidden = true;
       outputData.parentElement.hidden = false;
-      outputData.innerText = validURL(code.data) ? "<a href=\"" + code.data + "\" target=\"_blank\">" + code.data + "</a>" : code.data;
+      outputData.innerHTML = validURL(code.data) ? "<a href=\"" + code.data + "\" target=\"_blank\">" + code.data + "</a>" : code.data;
       // } else {
       //   outputMessage.hidden = false;
       //   outputData.parentElement.hidden = true;
